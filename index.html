@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <script src="index.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    ul { list-style: none; padding: 0; }
+    li { display: flex; align-items: center; gap: 10px; cursor: grab; }
+    span[contenteditable] { border-bottom: 1px dashed #ccc; }
+    #completed-todos {
+      margin-top: 20px;
+      opacity: 0.7;
+      text-decoration: line-through;
+    }
+    .todo-highlight {
+      background-color: #e8e8e8;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>To-Do List</h1>
+  <ul id="todo-list"></ul>
+  
+</body>
+</html>
